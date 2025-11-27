@@ -2,10 +2,10 @@ import unittest
 from unittest.mock import patch, MagicMock, mock_open
 import os
 import sys
+from cli_agent import read_file, ask_llm, format_llm_answer
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from cli_agent import read_file, ask_llm, format_llm_answer
 
 class TestCliGpt(unittest.TestCase):
 
